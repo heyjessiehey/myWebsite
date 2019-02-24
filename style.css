@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Ruda');
+
+body{
+  overflow-x: hidden;
+  font-family: 'Ruda', sans-serif;
+  color: #505962;
+}
+
+.navbar {
+  background: rgba(0,0,0,0.8);
+}
+
+.vidieo-backgroud {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.caption {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  width: 100%;
+  color: #D3D3D3;
+}
+
+.caption h1{
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: .3rem;
+  text-shadow: .1rem .1rem .9rem black;
+  padding-bottom: 1rem;
+}
+
+.caption h3 {
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.5rem;
+}
+
+.btn-xs {
+  font-weight: 600;
+  font-size: 1rem;
+  padding: .3rem .8rem;
+  letter-spacing: .1rem;
+  color: #D3D3D3;
+}
+
+.btn:hover{
+  border-color: #D3D3D3;
+  background-color: #D3D3D3;
+  color: #505962;
+}
+
+.btn:focus{
+  outline: none !important;
+  box-shadow: none
+}
+
+/*============= About Section =============*/
+.padding {
+  margin: 2rem auto 5rem;
+  padding-top: 3rem;
+}
+.col-md-8 h1 {
+    font-size: 2.4rem;
+}
+  /* Image Diamond Shape */
+.diamond, .dia {
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+
+}
+.diamond {
+  transform: rotate(45deg) translateY(-30px) translateX(-30px);
+}
+.diamond .dia {
+  width: 380px;
+  height: 380px;
+  transform: rotate(-45deg);
+  
+}
+.diamond img {
+  width: 80%;
+  height: auto;
+  opacity: 0.9;
+}
+
+/*============= Parallax =============*/
+.parallax1::before, .parallax2::before, .parallax3::before{
+  position: fixed;
+  content: '';
+}
+.parallax1, .parallax2, .parallax3, .parallax4{
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/*============= Technical Skills Section =============*/
+.parallax1 {
+  background-image: url("img/code.jpg");
+  min-height: 450px;
+}
+.caption1{
+  position: absolute;
+  top: 40%;
+  text-align: center;
+  width: 100%;
+  color: #D3D3D3;
+}
+.caption1 h2{
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-shadow: .1rem .1rem .9rem black;
+}
+.background {
+  background-color:rgba(194, 194, 194, 0.8);
+  padding: .8rem;
+}
+
+/*============= Accomplishment Section =============*/
+.parallax2 {
+  background-image: url("img/accom.jpg");
+  min-height: 450px;
+}
+.bold{
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: rgb(17, 16, 16)
+}
+
+/*============= Project Section =============*/
+.parallax3 {
+  background-image: url("img/coffee.jpg");
+  min-height: 450px;
+}
+a{
+  color: #505962
+}
+a:hover{
+  color: #080808
+}
+
+/*============= Salutation Section =============*/
+.parallax4 {
+  background-image: url("img/bye.jpg");
+  min-height: 100vh;
+}
+
+/*============= Media Queries =============*/
+@media (max-width: 575px){
+  .parallax1, .parallax2, .parallax3, .parallax4{
+    background-attachment: scroll;
+  }
+  .background {
+    padding: .1rem .2rem;
+  }
+  .caption1 h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+  }
+  .caption h1{
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: .3rem;
+    padding-bottom: 1rem;
+  } 
+  .caption h3 {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .btn:hover{
+    background-color: rgba(0,0,0,0.8);
+    color: #D3D3D3;
+    border-color:rgba(0,0,0,0.8);
+  }
+}
