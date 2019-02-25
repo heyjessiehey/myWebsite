@@ -9,6 +9,9 @@ body{
 .navbar {
   background: rgba(0,0,0,0.8);
 }
+.btn-md{
+  color: #D3D3D3;
+}
 
 .vidieo-backgroud {
   position: relative;
@@ -91,7 +94,7 @@ body{
 }
 
 /*============= Parallax =============*/
-.parallax1::before, .parallax2::before, .parallax3::before{
+.parallax1::before, .parallax2::before, .parallax3::before, .parallax4::before{
   position: fixed;
   content: '';
 }
